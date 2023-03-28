@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* css toàn bộ trang  */
+.main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+/* phần đầu trang web */
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* phần logo */
+.header .logo{
+    position: relative;
+    max-width: 250px;
+}
+/* các thẻ tiêu đề phần header */
+.header ul{
+    position: absolute;
+    display: flex;
+    padding-left: 60%;
+    top: 70px;
+}
+.header ul li{
+    list-style: none;
+}
+.header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.header ul li a:hover{
+    color: rgb(241, 45, 45)
+}
+/* phần nôi dung trang web */
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* phần văn bản và tiêu đề */
+.textBox{
+    position: relative;
+    max-width: 600px;
+}
+.textBox h2{
+    color: #333;
+    font-size: 50px;
+    font-weight: 500;
+}
+.textBox h2 span{
+    color: #e20236;
+    font-size: 70px;
+    font-weight: 900;
+}
+.textBox p{
+    font-size: 25px;
+    color: #333;
+    width: 700px;
+}
+/* nút xem thêm */
+.textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #e20236;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.textBox a:hover{
+    background: #cfc9c9;
+    color: #e20236;
+}
+/* ảnh chính */
+.imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+.imgBox img{
+    width: 650px;
+}
+.cake{
+    position: absolute;
+    left: 40%;;
+    bottom: 40px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.cake img{
+    width: 150px;
+}
+.cake li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.cake li:hover{
+    transform: translateY(-20px);
+}
+/* các icons liên hệ */
+.contact{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact li{
+    list-style: none;
+}
+.contact li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+.contact img{
+    width: 50px;
+}
+/* phần màu nền chuyển trang sử dụng để xử lý css */
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e11f26;
+    clip-path: circle(650px at right 800px);
+}

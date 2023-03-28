@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo1.png">
+    <title>Orion</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="circle"></div>
+        <div class="header">
+            <a href="#"><img src="./images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Sản Phẩm</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="textBox">
+                <h2>Tình như ChocoPie<br><span>Orion</span></h2>
+                <p>Bánh vị ngọt tình yêu, Orion luôn nhắc nhớ rằng đó là những thứ mà chính con em chúng ta sẽ ăn. Sứ
+                    mệnh của Orion là sản xuất những thực phẩm đảm bảo vệ sinh an toàn thực phẩm với chất lượng tốt nhất
+                    cho người tiêu dùng.</p>
+                <a href="#">Xem Thêm</a>
+            </div>
+            <div class="imgBox">
+                <img src="./images/banh1.png" class="orion" style="width: 500px;">
+            </div>
+        </div>
+        <ul class="cake">
+            <li><img src="./images/banh1.png" onclick="imgSlider('./images/banh1.png');changeCirlcleColor('#e20236')"></li>
+            <li><img src="./images/banh2.png" onclick="imgSlider('./images/banh2.png');changeCirlcleColor('#491612')"></li>
+            <li><img src="./images/banh3.png" onclick="imgSlider('./images/banh3.png');changeCirlcleColor('#f52253')"></li>
+            <li><img src="./images/banh4.png" onclick="imgSlider('./images/banh4.png');changeCirlcleColor('#af89b7')"></li>
+        </ul>
+        <ul class="contact">
+            <li><a href="#"><img src="./images/face.png"></a></li>
+            <li><a href="#"><img src="./images/twitter.png"></a></li>
+            <li><a href="#"><img src="./images/insta.png"></a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.orion').src = anything;
+        }
+        function changeCirlcleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
